@@ -29,6 +29,12 @@
 - 快速复盘：沉淀每次发布与互动结果，便于持续迭代
 
 ## 安装
+- 方法1: openclaw / codex 安装，复制以下命令发送
+```
+帮我安装这个skill，`https://github.com/Xiangyu-CAS/xiaohongshu-ops-skill`
+```
+
+- 方法2: clawhub安装
 ```
 clawhub install xiaohongshu-ops
 ```

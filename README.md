@@ -45,3 +45,5 @@ clawhub install xiaohongshu-ops
 - `references/`
   - `references/xhs-comment-ops.md`：评论互动与回复策略
   - `references/xhs-publish-flows.md`：发布流程（视频/图文/长文）拆解
+- `examples/reply-examples.md`
+  - 近场评论对位回复样例（含偏离与修正对照）

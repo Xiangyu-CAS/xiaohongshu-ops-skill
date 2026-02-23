@@ -241,7 +241,7 @@ description: "End-to-end Xiaohongshu operations including positioning, topic res
 
 ## 6) 发布后互动与风控（轻量）
 
-评论检查与回复详细流程请按需读取：`references/xhs-comment-ops.md`（含通知页优先、对位校验、one-send-per-turn、风控节奏）。
+评论检查与回复详细流程请按需读取：`references/xhs-comment-ops.md`（含通知页优先、对位校验、one-send-per-turn、风控节奏）。配合 `examples/reply-examples.md` 使用，优先采用经过修正的高匹配回复模板。
 
 1. 首小时追踪：点赞、收藏、评论量变化
 2. 评论初筛：赞同观点、反对观点、可追评问题

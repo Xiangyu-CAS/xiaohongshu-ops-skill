@@ -1,6 +1,6 @@
 ---
 name: xiaohongshu-ops
-description: End-to-end Xiaohongshu operations: positioning, topic research, content production, publish execution, and post-incident recovery. Reusable across verticals; includes reusable templates and one concrete “陪你看剧” case preset.
+description: "End-to-end Xiaohongshu operations including positioning, topic research, content production, publish execution, and post-incident recovery. Reusable across verticals with templates and a concrete 陪你看剧 case preset."
 ---
 
 # Openclaw 小红书运营技能（通用版）

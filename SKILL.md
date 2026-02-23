@@ -35,6 +35,18 @@ description: "End-to-end Xiaohongshu operations including positioning, topic res
 - 每次返回结构化信号，默认先够用再扩展，不追求“抓满”
 - 失败两次则降级：减少动作、保留已得结果、请求单条用户支持动作
 
+### 0.2) **高优先级：浏览器通道稳定规则（最重要）**
+
+- **默认只用内置浏览器**：`profile="openclaw"`，不要混用或先开扩展再切换。
+- 任何浏览器动作开始前，先确认当前会话是 `openclaw` profile（`browser.start --profile=openclaw` 后再 `open` / `snapshot`）。
+- 只要出现"no tab is connected"、"profile \"chrome\"" 等提示，立即切回 `openclaw` 继续，不再在 relay 频道硬跑。
+- 若出现 `Chrome extension relay ... no tab is connected`：先停止当前尝试，执行一次
+  1. `browser.start --profile openclaw`
+  2. `browser.open` 到目标页
+  3. 使用返回的 `targetId` 连续动作
+- 复用同一 `targetId`，失败重试只做一次并改为更稳路径，不做盲重试。
+- 出现通道不稳时，先汇报“通道异常（未到达可操作快照）”，避免误发。
+
 ### 0.1) 低 token 操作准则（必须遵循）
 
 - 少快照，多 evaluate：优先用一次 `evaluate` 返回多字段（账号名、页面状态、按钮可见、字数）

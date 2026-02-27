@@ -33,4 +33,7 @@
   1) 先 snapshot 刷新 ref
   2) 同动作最多再试 1 次
   3) 仍失败则切稳健路径（同义入口/用户手动最后一击）
+- 轮播详情页抓图时，禁止取第一个 `.img-container`；必须优先抓取 `.swiper-slide-active:not(.swiper-slide-duplicate) .img-container img`。
+- 抓图后要做一次人工核对：检查 URL 末段 key 是否与用户指定封面一致（例如 `.../1040g3k...`）。不一致则重新抓取 active 图。
+- 图生图产物需要做“相似度体感检查”：若用户反馈元素过于雷同，切换到 style-only 提示词并重生，不争辩。
 - 涉及 browser.upload 时，默认先检查文件是否位于 `/tmp/openclaw/uploads`，否则先复制再上传。

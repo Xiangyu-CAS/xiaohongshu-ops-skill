@@ -14,6 +14,7 @@ description: "End-to-end Xiaohongshu operations including positioning, topic res
 - 竞品/同类账号对标
 - 小红书发布前演练与内容交付
 - 发布后快速复盘（互动结构、评论回复、热点追踪）
+- Viral Copy 链路（输入 URL，高贴合学习封面/配图、标题、正文并生成可发布近似结构笔记）
 
 将每类账号的行业细节作为“案例模块（case module）”挂载到通用流程中。
 
@@ -87,6 +88,14 @@ description: "End-to-end Xiaohongshu operations including positioning, topic res
 - 只允许从搜索结果页进入帖子；
 - 优先通知/回复场景前先对位校验。
 - 连续失败回退策略见引用文件。
+
+## 3.6) Viral Copy（URL → 新笔记）
+
+按 `references/xhs-viral-copy-flow.md` 执行。
+
+- 输入：目标爆款笔记 URL（可多条）。
+- 输出：1 套可发布素材（封面/配图方案 + 标题 + 正文 + 话题）。
+- 复刻原则：高贴合主题与结构（标题句式、封面信息层级、正文节奏、互动机制），同时避免逐字照抄与素材侵权。
 
 ## 4) 通用内容模板（小红书）
 

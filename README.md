@@ -4,9 +4,11 @@
 
 # xiaohongshu-ops
 
-小红书自动运营Skill，搭配Openclaw可以独立运营小红书账号
+小红书自动运营Skill，搭配Openclaw可以独立运营小红书账号，帮你分析、选题、创作、复盘、复刻
 
-基于浏览器自动化(CDP)，实现自动发布，自动回复、爆款笔记复刻，第一次需要扫码登录，后续无需重复验证
+基于浏览器自动化(CDP)，第一次需要扫码登录，后续无需重复验证
+
+<img src="./assets/xiaohongshu-ops-poster.jpg" alt="xiaohongshu-ops 海报" width="720" />
 
 ## What's New
 - **03.19**：重点转向AI辅助创作和分析，新增`推荐流分析`,`账号分析`,`选题灵感`,`知识库`

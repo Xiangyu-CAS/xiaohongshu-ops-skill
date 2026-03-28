@@ -16,7 +16,6 @@
 ## 一键脚本（推荐，直接粘贴执行）
 
 ```bash
-#!/usr/bin/env bash
 set -euo pipefail
 
 if [[ ! -t 0 || ! -t 1 ]]; then

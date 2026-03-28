@@ -16,8 +16,8 @@
 ## 一键脚本（推荐，直接粘贴执行）
 
 ```bash
-#!/usr/bin/env bash
 set -euo pipefail
+setopt INTERACTIVE_COMMENTS
 
 if [[ ! -t 0 || ! -t 1 ]]; then
   echo "请在交互式终端中运行（OAuth 需要浏览器 + 终端交互）。"
